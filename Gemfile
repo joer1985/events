@@ -42,6 +42,7 @@ gem 'spring',        group: :development
 gem 'awesome_print'
 gem 'geocoder'
 gem 'nokogiri'
+gem 'rest-client'
 
 group :development do
   gem 'sqlite3'

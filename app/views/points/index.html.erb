@@ -1,5 +1,6 @@
 <h2 class='text-center'>All our Events!</h2>
 <hr>
+
 <br>
 <div class="row text-center">
 <% @points.each do |point| %>
@@ -9,14 +10,9 @@
       <p><%= point.state %></p>
       <p><%= point.zip %></p>
       <p><%= point.country %></p>
+      <p><%= point.latitude %></p>
+      <p><%= point.longitude %></p>
   <% end %>
-    </div>
-<div>
-<% @points.each do |point| %>
-  <% point.save_latlong %>
-  <p><%= point.latitude %></p>
-  <p><%= point.longitude %></p>
-<% end %>
 </div>
 
 

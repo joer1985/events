@@ -1,9 +1,28 @@
-<iframe>
-    width="600"
-    height="450"
-    frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?key=<%= ENV['GOOGLE_MAPS_API_KEY'] %>
-    &q=<%= "#{@point.latitude},#{@point.longitude}" %>">
-</iframe>
+<%= stylesheet_link_tag "style" %>
+
+<h1>Event: <%= @point.title %></h1>
+  <p></p>
+  
+  <div class="box2">
+      <%= link_to(image_tag(@point.thumb), @point.purchase_link, )%>
+   
+  </div>
+
+  <div class="box2">
+  <ul>
+    <li><%= @point.city %></li>
+    <li><%= @point.state %></li>
+    <li><%= @point.zip %></li>
+  </div>
+
+  <div class="box2">
+    <iframe>
+        width="600"
+        height="450"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=<%= ENV['GOOGLE_MAPS_API_KEY'] %>
+        &q=<%= "#{@point.latitude},#{@point.longitude}" %>">
+    </iframe>
+</div>
 
 <br>

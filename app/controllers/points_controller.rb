@@ -4,14 +4,6 @@ class PointsController < ApplicationController
   end
 
   def show
-    @points = Point.find(params[:id])
+    @point = Point.find(params[:id])
   end
-
-
-
-private
-
-def point_params
-  params.require(:point).permit(:title, :city, :state, :country, :zip, :thumb, :purchase_link, :description, :category)
-end
 end

@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'points/index'
-
-  get 'points/show'
+  resources :points, only: [:index, :show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
