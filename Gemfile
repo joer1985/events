@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'dotenv', group: :development
+gem 'dotenv-rails', group: :development
 
 
 
@@ -47,6 +47,8 @@ gem 'rest-client'
 group :development do
   gem 'sqlite3'
   gem 'pry-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :production do
