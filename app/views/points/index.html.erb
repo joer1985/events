@@ -1,0 +1,25 @@
+<h2 class='text-center'>All our Events!</h2>
+<hr>
+<br>
+<div class="row text-center">
+<% @points.each do |point| %>
+      <%= link_to(image_tag(point.thumb), point.purchase_link) %>
+      <p><%= point.title %></p>
+      <p><%= point.city %></p>
+      <p><%= point.state %></p>
+      <p><%= point.zip %></p>
+      <p><%= point.country %></p>
+  <% end %>
+    </div>
+<div>
+<% @points.each do |point| %>
+  <% point.save_latlong %>
+  <p><%= point.latitude %></p>
+  <p><%= point.longitude %></p>
+<% end %>
+</div>
+
+
+
+
+
