@@ -16,13 +16,14 @@
   </div>
 
   <div class="box2">
-    <iframe>
+    <iframe
         width="600"
         height="450"
         frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?key=<%= ENV['GOOGLE_MAPS_API_KEY'] %>
-        &q=<%= "#{@point.latitude},#{@point.longitude}" %>">
+        src="<%= @url %>">
     </iframe>
 </div>
-
 <br>
+
+
+
